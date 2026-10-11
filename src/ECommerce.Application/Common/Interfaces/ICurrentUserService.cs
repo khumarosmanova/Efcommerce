@@ -1,0 +1,11 @@
+namespace ECommerce.Application.Common.Interfaces;
+
+public interface ICurrentUserService
+{
+    string? UserId { get; }
+    string? UserName { get; }
+    string? Email { get; }
+    bool IsAuthenticated { get; }
+    IReadOnlyList<string> Roles { get; }
+    IReadOnlyList<string> Permissions { get; }
+}
